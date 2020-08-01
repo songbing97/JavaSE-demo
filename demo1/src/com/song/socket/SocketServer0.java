@@ -1,4 +1,4 @@
-package com.song;
+package com.song.socket;
 
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
@@ -39,7 +39,7 @@ public class SocketServer0 extends Thread {
         int port = Integer.parseInt(args[0]);
         try {
             Thread t = new SocketServer0(port);
-            t.run();
+            t.start();
         }catch (IOException e) {
             e.printStackTrace();
         }

@@ -1,4 +1,4 @@
-package com.song;
+package com.song.socket;
 
 import java.io.*;
 import java.net.Socket;
