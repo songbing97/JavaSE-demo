@@ -1,5 +1,8 @@
 # idea文件
 /.idea/
 
-#
+#苹果自带文件
 .DS_Store
+
+# class文件
+/out/
