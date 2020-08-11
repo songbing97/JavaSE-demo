@@ -6,19 +6,35 @@ public class String_demo {
 		String str2 = new String("abcde");
 		String str3 = "abcde";
 		String str4 = new String("abcde");
+
+		/**
+		 * Buffer不是final类型，可以更改值，
+		 * 而String是final类型，更改值就是创建一个新的String
+ 		 */
+
+		StringBuffer stringBuffer = new StringBuffer("abcde");
+		System.out.println(stringBuffer.toString());
 		/**
 		 * == 对于基本类型，进行值比较；对于引用类型，比较引用是否相同
 		 */
-		if (str1 == str2) {  //false
+		if (str1 == str2) {
+			//false
 			System.out.println("str1 == str2");
 		}
 
-		if (str1 == str3) {  //true
+		if (str1 == str3) {
+			//true
 			System.out.println("str1 == str3");
 		}
 
-		if (str2 == str4) {  //false
+		if (str2 == str4) {
+			//false
 			System.out.println("str2 == str4");
+		}
+
+		if (stringBuffer.toString() == str4) {
+			//false
+			System.out.println("stingBuffer == str4");
 		}
 
 		/**

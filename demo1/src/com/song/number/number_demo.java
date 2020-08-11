@@ -117,6 +117,14 @@ public class number_demo {
 		System.out.println(ST.doubleValue());
 
 		System.out.println(ST.compareTo(FL.shortValue()));
+		/**
+		 * 使用parseInt,valueof 可以把类型A转换为类型B，但是前提是在转换范围之内
+		 * 如果不在范围内，会抛出 NumberFormatException
+		 * 常见的几个原因：
+		 * 1、超出转换类型的数值范围
+		 * 2、转换值类型没有考虑值为空的状况
+		 * 3、进制不同（未曾遇到）
+ 		 */
 		System.out.println(Integer.parseInt("33"));
 	}
 }
