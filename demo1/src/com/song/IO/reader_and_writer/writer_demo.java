@@ -1,4 +1,4 @@
-package com.song.IO.reader_writer;
+package com.song.IO.reader_and_writer;
 
 import java.io.*;
 

@@ -1,7 +1,6 @@
-package com.song.IO.reader_writer;
+package com.song.IO.reader_and_writer;
 
 import java.io.*;
-import java.util.Scanner;
 
 public class reader_demo {
 	public static void main(String[] args) throws IOException {
